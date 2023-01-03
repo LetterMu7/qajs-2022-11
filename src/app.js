@@ -39,3 +39,22 @@ export const getTotal = (items = [], discount = 0) => {
     }, 0)
     return total - total * discount / 100;
 }
+
+const scores = {
+    Anna: 10,
+    Olga: 1,
+    Ivan: 5,
+    Nina: 8,
+    Denis: 7,
+    Irina: 3,
+    }
+
+ function getScore(scores) {
+    let sum = 0
+    for (const key in scores) {
+        sum += scores[key]
+    }
+    return sum
+}
+
+console.log(getScore(scores));
